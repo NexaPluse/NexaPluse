@@ -1,10 +1,11 @@
-import { Button } from "./components/ui/button";
+import { ThemeProvider } from "@/components/theming/theme-provider";
+import LandingPage from "./containers/landing";
 
 function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <Button>NexaPulse</Button>
-    </main>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <LandingPage />
+    </ThemeProvider>
   );
 }
 
