@@ -49,18 +49,18 @@ const links: NavLink[] = [
 function NavigationWrap({ mobile = false, navLinks = [] }: NavigationProps) {
   const [mobileNavigationOpened, setMobileNavigationOpened] = useState(false);
 
-  const navClassName = ` text-base bg-background space-x-2 justify-end w-full
+  const navClassName = ` text-base bg-background space-x-2 justify-end 
     ${
       mobile
         ? `transition transform -right-2/3 fixed top-0 z-20 py-4 pb-7 w-2/3 overflow-y-auto py-4 sm:hidden ${
             mobileNavigationOpened ? "-translate-x-full shadow-2xl" : ""
           }`
-        : "hidden sm:flex"
+        : "hidden md:flex"
     }
   `;
   const navListClassName = `
     flex max-w-[800px] w-full
-    ${mobile ? "flex-col space-y-2 w-full " : "items-center gap-12"}
+    ${mobile ? "flex-col space-y-2  " : "items-center gap-12"}
   `;
   const navListItemClassName = `
     group relative
@@ -77,7 +77,7 @@ function NavigationWrap({ mobile = false, navLinks = [] }: NavigationProps) {
         <div className="flex gap-2 md:hidden ">
           <ModeToggle />
           <button
-            className="block sm:hidden"
+            className="block md:hidden"
             onClick={() => setMobileNavigationOpened(true)}
             title="Open navigation menu"
           >
@@ -129,7 +129,7 @@ function NavigationWrap({ mobile = false, navLinks = [] }: NavigationProps) {
             </li>
           ))}
         </ul>
-        <div className="max-sm:hidden">
+        <div className="max-md:hidden">
           <ModeToggle />
         </div>
       </nav>
