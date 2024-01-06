@@ -7,9 +7,9 @@ import { GrOptimize } from "react-icons/gr";
 
 export default function AboutUs() {
   return (
-    <section className="container bg-primary" id="about-us">
+    <section className="container bg-primary mt-24" id="about-us">
       <div className="">
-        <div className="flex lg:grid grid-cols-4 py-8">
+        <div className="flex flex-col space-y-4 sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-4 py-8">
           <div className="flex flex-col   text-center px-6 cursor-pointer hover:bg-[#42a4ee] rounded-lg duration-500 ease-out hover:shadow-2xl ">
             <div className=" py-3 px-2 space-y-4 ">
               <MdOutlineDesignServices
