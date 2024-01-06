@@ -38,6 +38,9 @@ module.exports = {
           foreground: "hsl(var(--muted-foreground))",
         },
       },
+      boxShadow: {
+        box: "2px 6px 10px 0px rgba(0, 0, 0, 0.15)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
