@@ -16,7 +16,7 @@ export default function Consultation() {
           {consultations.map((consultation, index) => (
             <div
               key={index}
-              className="flex flex-col gap-4 items-center p-8 rounded-xl shadow-box w-[300px] h-[300px] text-2xl text-center text-primary"
+              className="flex flex-col gap-4 items-center p-8 rounded-xl transition-all duration-300 hover:shadow-box dark:hover:shadow-boxDark w-[300px] h-[300px] text-2xl text-center text-primary"
             >
               {consultation.icon}
               <p>{consultation.text}</p>

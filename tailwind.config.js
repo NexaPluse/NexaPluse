@@ -40,6 +40,7 @@ module.exports = {
       },
       boxShadow: {
         box: "2px 6px 10px 0px rgba(0, 0, 0, 0.15)",
+        boxDark: "2px 6px 10px 0px rgba(21, 140, 231, 1)",
       },
       borderRadius: {
         lg: "var(--radius)",
