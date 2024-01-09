@@ -10,7 +10,7 @@ export default function Portfolio() {
       className="container py-14 flex flex-col items-center gap-10 scroll-m-20"
       id="portfolio"
     >
-      <h2 className="text-5xl text-primary font-heading">Our Portfolio</h2>
+      <h2 className="text-3xl lg:text-5xl text-primary font-heading">Our Portfolio</h2>
       <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid lg:grid-cols-3 gap-20">
         {portfolio.map((p, index) => (
           <div key={index} className="flex flex-col gap-4">

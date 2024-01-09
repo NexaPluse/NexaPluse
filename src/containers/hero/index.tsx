@@ -12,7 +12,7 @@ export default function Hero() {
               Technology
             </span>
           </h1>
-          <h4 className="text-[14px] md:text-[18px] lg:text-[22px] text-foreground">
+          <h4 className="lg:w-3/4 text-[14px] md:text-[18px] lg:text-[22px] text-foreground">
             We design, build and support elegance websites to Upgrade businesses
           </h4>
           <div className="flex sm:hidden max-w-[400px] w-[300px] mx-auto ">
