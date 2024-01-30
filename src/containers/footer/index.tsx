@@ -13,8 +13,8 @@ export default function Footer() {
               assist business owners make new customers and retain the existing
               ones.
             </p>
-            <p className="font-bold">info@nexapluse.com</p>
-            <p className="font-bold">+2349012345678</p>
+            <p className="font-bold">Nexapluse@gmail.com</p>
+            <p className="font-bold">+2347040331994</p>
           </div>
           <div className="max-w-[680px] lg:flex flex-col gap-16 hidden ">
             <div className="flex justify-center lg:justify-start max-md:flex-wrap gap-12 ">

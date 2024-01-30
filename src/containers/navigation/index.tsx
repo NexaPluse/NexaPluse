@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 export default function Navigation({ navLinks = links }: HeaderProps) {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 shadow  bg-background">
-      <nav className="container mx-auto  flex w-full items-center justify-between bg-background px-6 py-4">
+      <nav className="container mx-auto  flex w-full items-center justify-between bg-background px-6 py-2">
         <a href="/">
           <Logo />
         </a>
@@ -19,7 +19,9 @@ export default function Navigation({ navLinks = links }: HeaderProps) {
 }
 
 function Logo() {
-  return <img src={logo} width={165} height={80} alt="logo" />;
+  return (
+    <img src={logo} width={165} height={40} alt="logo" className="w-[50%]" />
+  );
 }
 
 const links: NavLink[] = [
@@ -41,7 +43,7 @@ const links: NavLink[] = [
   },
   {
     title: "Lets Talk",
-    href: "#consultation",
+    href: "tel:+2347040331994",
     button: true,
   },
 ];
