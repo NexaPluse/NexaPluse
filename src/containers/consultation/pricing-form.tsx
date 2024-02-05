@@ -50,7 +50,7 @@ export function PricingForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex w-full flex-col items-center gap-4  md:w-2/4 md:gap-8 "
+        className="flex w-full flex-col items-center gap-4  md:w-2/5 md:gap-4 "
       >
         <FormField
           control={form.control}
