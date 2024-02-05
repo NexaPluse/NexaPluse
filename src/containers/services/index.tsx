@@ -1,16 +1,32 @@
 import serviceImg from "../../assets/images/service.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/Variants";
 
 export default function Services() {
   return (
-    <section className="container  mt-24" id="services">
+    <motion.section
+      className="container scroll-m-20  mt-24 mb-20"
+      id="services"
+    >
       <div className="flex flex-col space-y-6 lg:flex-row justify-evenly mx-auto space-x-6 lg:space-x-12 items-center">
-        <div>
+        <motion.div
+          variants={fadeIn("right", "tween", 0.6, 1.0)}
+          initial="hidden"
+          whileInView={"show"}
+          exit={"show"}
+        >
           <div className=" max-w-[700px] lg:w-[550px] mx-auto ">
             <img src={serviceImg} alt="Image here" className="rounded-xl" />
           </div>
-        </div>
-        <div className="flex flex-col space-y-4 mx-auto ">
-          <h1 className=" font-heading text-primary font-bold text-[24px] md:text-[38px] lg:text-[50px]">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", "tween", 0.6, 1.0)}
+          initial="hidden"
+          whileInView={"show"}
+          exit={"show"}
+          className="flex flex-col space-y-4 mx-auto "
+        >
+          <h1 className=" font-heading text-primary font-bold text-[24px] md:text-[38px] lg:text-4xl">
             {" "}
             Our Services
           </h1>
@@ -33,8 +49,8 @@ export default function Services() {
               <li>Digital Marketing</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
