@@ -7,7 +7,13 @@ export default function Hero() {
   return (
     <motion.section className="container" id="hero">
       <div className="flex flex-row mt-40 justify-evenly max-h-[600px] items-center ">
-        <motion.div className="flex flex-col  space-y-4 md:space-y-8 px-0   lg:px-4 text-center sm:text-start ">
+        <motion.div
+          variants={fadeIn("right", "tween", 0.2, 0.8)}
+          initial="hidden"
+          whileInView={"show"}
+          exit={"show"}
+          className="flex flex-col  space-y-4 md:space-y-8 px-0   lg:px-4 text-center sm:text-start "
+        >
           <h1 className="font-heading text-foreground text-[24px] md:text-[38px] lg:text-[50px]">
             Upgrade your business with{" "}
             <span className="text-primary font-bold text-[24px] md:text-[38px] lg:text-[50px]">
